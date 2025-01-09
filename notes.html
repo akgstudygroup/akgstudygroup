@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-Wise Notes - FutureGrow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">FutureGrow</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="notes-section">
+            <h1>Day-Wise Notes</h1>
+            <div class="search-bar">
+                <input 
+                    type="text" 
+                    id="searchNotes" 
+                    placeholder="Search by day..." 
+                    onkeyup="filterNotes()"
+                />
+            </div>
+            <div class="notes-list" id="notesList">
+                <!-- Day 1 -->
+                <div class="note-item" data-day="day 1">
+                    <h3>Day 1: Introduction to Python</h3>
+                    <p>Learn the basics of Python programming, including syntax and variables.</p>
+                    <a href="notes/day1.pdf" class="download-btn" download>Download</a>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="note-item" data-day="day 2">
+                    <h3>Day 2: Control Structures</h3>
+                    <p>Explore loops, conditions, and control statements in Python.</p>
+                    <a href="notes/day2.pdf" class="download-btn" download>Download</a>
+                </div>
+
+                <!-- Day 3 -->
+                <div class="note-item" data-day="day 3">
+                    <h3>Day 3: Functions in Python</h3>
+                    <p>Dive into creating and using functions in Python programs.</p>
+                    <a href="notes/day3.pdf" class="download-btn" download>Download</a>
+                </div>
+
+                <!-- Day 4 -->
+                <div class="note-item" data-day="day 4">
+                    <h3>Day 4: Data Structures</h3>
+                    <p>Understand lists, dictionaries, tuples, and sets in Python.</p>
+                    <a href="notes/day4.pdf" class="download-btn" download>Download</a>
+                </div>
+
+                <!-- Add more days as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FutureGrow. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

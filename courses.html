@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - FutureGrow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">FutureGrow</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-bar">
+            <input 
+                type="text" 
+                id="searchCourses" 
+                placeholder="Search courses..." 
+                onkeyup="filterCourses()"
+            />
+        </section>
+
+        <section class="courses-list" id="coursesList">
+            <h1>Our Courses</h1>
+
+            <div class="course-item" data-title="Complete Python Programming">
+                <img src="python.jpg" alt="Complete Python Programming">
+                <h3>Complete Python Programming</h3>
+                <p>Master Python from beginner to advanced levels with practical examples.</p>
+                <button class="buy-btn">Enroll Now</button>
+            </div>
+
+            <div class="course-item" data-title="Web Development Bootcamp">
+                <img src="web-dev.jpg" alt="Web Development Bootcamp">
+                <h3>Web Development Bootcamp</h3>
+                <p>Learn to build stunning websites using HTML, CSS, JavaScript, and more.</p>
+                <button class="buy-btn">Enroll Now</button>
+            </div>
+
+            <div class="course-item" data-title="Data Science and Machine Learning">
+                <img src="data-science.jpg" alt="Data Science and Machine Learning">
+                <h3>Data Science and Machine Learning</h3>
+                <p>A complete guide to Data Science concepts and ML model building.</p>
+                <button class="buy-btn">Enroll Now</button>
+            </div>
+
+            <div class="course-item" data-title="AI and Deep Learning">
+                <img src="ai-deep-learning.jpg" alt="AI and Deep Learning">
+                <h3>AI and Deep Learning</h3>
+                <p>Dive deep into Artificial Intelligence and Neural Networks with this course.</p>
+                <button class="buy-btn">Enroll Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FutureGrow. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - FutureGrow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">AKG STUDY GROUP</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-bar">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search books..." 
+                onkeyup="filterBooks()"
+            />
+        </section>
+
+        <section class="books-list" id="booksList">
+            <h1>Explore Our <br>EBooks</h1>
+
+            <div class="book-item" data-title="Mathematics Course Book">
+                <img src="book1.jpg" alt="Mathematics Course Book">
+                <h3>Mathematics Course Book</h3>
+                <p>A complete guide to learning Mathematics for beginners.</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <div class="book-item" data-title="Grammar Mastery Book">
+                <img src="book2.jpg" alt="Grammar Mastery Book">
+                <h3>Grammar Mastery Book</h3>
+                <p>Master the art of grammar with our detailed course book.</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <div class="book-item" data-title="Advanced Programming Book">
+                <img src="book3.jpg" alt="Advanced Programming Book">
+                <h3>Advanced Programming Book</h3>
+                <p>Learn advanced programming techniques for professionals.</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <div class="book-item" data-title="AI and Machine Learning Book">
+                <img src="book4.jpg" alt="AI and Machine Learning Book">
+                <h3>AI and Machine Learning Book</h3>
+                <p>Explore AI concepts and applications in this comprehensive book.</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="book-item" data-title="Mathematics Course Book">
+                <img src="book1.jpg" alt="Mathematics Course Book">
+                <h3>Mathematics Course Book</h3>
+                <p>A complete guide to learning Mathematics for beginners.</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <div class="book-item" data-title="Grammar Mastery Book">
+                <img src="book2.jpg" alt="Grammar Mastery Book">
+                <h3>Grammar Mastery Book</h3>
+                <p>Master the art of grammar with our detailed course book.</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <div class="book-item" data-title="Advanced Programming Book">
+                <img src="book3.jpg" alt="Advanced Programming Book">
+                <h3>Advanced Programming Book</h3>
+                <p>Learn advanced programming techniques for professionals.</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <div class="book-item" data-title="AI and Machine Learning Book">
+                <img src="book4.jpg" alt="AI and Machine Learning Book">
+                <h3>AI and Machine Learning Book</h3>
+                <p>Explore AI concepts and applications in this comprehensive book.</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AKG STUDY GROUP. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
