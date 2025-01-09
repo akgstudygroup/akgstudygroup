@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Course and Ebook Downloads - AKG Study Group</title>
+    <title>Ebook Store - AKG Study Group</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -31,40 +32,45 @@
         .section h2 {
             font-size: 2.5rem;
             margin-bottom: 30px;
+            color: #1d3c7c;
         }
-        .module, .ebook-card {
+        .ebook-card {
             background-color: white;
             padding: 20px;
             margin: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 300px;
+            margin: auto;
         }
-        .module h3, .ebook-card h3 {
+        .ebook-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .ebook-card h3 {
             font-size: 2rem;
             margin-bottom: 15px;
         }
-        .module p, .ebook-card p {
+        .ebook-card p {
             font-size: 1rem;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
-        .module video {
-            max-width: 100%;
-            margin: 20px 0;
-        }
-        .module .download-btn, .module .video-btn, .ebook-card a {
-            padding: 10px 20px;
-            background-color: navy;
+        .buy-btn {
+            padding: 12px 30px;
+            background-color: #1d3c7c;
             color: white;
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            font-size: 1.1rem;
             text-transform: uppercase;
             font-weight: bold;
-            margin: 10px 0;
-            text-decoration: none;
         }
-        .module .download-btn:hover, .module .video-btn:hover, .ebook-card a:hover {
-            background-color: #1d3c7c;
+        .buy-btn:hover {
+            background-color: #1a2f5f;
         }
         footer {
             text-align: center;
@@ -72,99 +78,116 @@
             background-color: #1d3c7c;
             color: white;
         }
-        .ebooks {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
+        footer .social-links {
+            margin: 20px 0;
+        }
+        footer .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        footer .social-links a:hover {
+            color: #1a2f5f;
+        }
+        .form-container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input, .form-container select, .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-container button {
+            background-color: #1d3c7c;
+            color: white;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #1a2f5f;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Full Course & Ebook Downloads - AKG Study Group</h1>
-    <p>Learn and Grow with Our Comprehensive Courses and Premium Ebooks</p>
+    <h1>AKG Study Group Ebook Store</h1>
+    <p>Discover our collection of premium ebooks and start learning today!</p>
 </header>
 
-<!-- Course Modules -->
+<!-- Ebook Collection -->
 <div class="section">
-    <h2>Course Modules</h2>
+    <h2>Featured Ebooks</h2>
 
-    <!-- Module 1 -->
-    <div class="module">
-        <h3>Module 1: Introduction to the Course</h3>
-        <p>This module introduces you to the course structure and what you will learn in the upcoming lessons.</p>
-        <video controls>
-            <source src="https://youtu.be/teSnf9If06k?si=-10C_i57oHiXE74_">
-            Your browser does not support the video tag.
-        </video>
-        <br>
-        <a href="pdf/module1-introduction.pdf" class="download-btn" download>Download PDF</a>
+    <!-- Ebook 1 -->
+    <div class="ebook-card">
+        <img src="https://via.placeholder.com/250" alt="AI for Beginners Ebook">
+        <h3>AI for Beginners</h3>
+        <p>Start your journey into Artificial Intelligence with this ebook. Perfect for beginners!</p>
+        <a href="buy-now-ai.html"><button class="buy-btn">Buy Now</button></a>
     </div>
 
-    <!-- Module 2 -->
-    <div class="module">
-        <h3>Module 2: Basics of Grammar</h3>
-        <p>Learn the basic rules of grammar, sentence structure, and more in this module.</p>
-        <video controls>
-            <source src="videos/module2-grammar.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <br>
-        <a href="pdf/module2-grammar.pdf" class="download-btn" download>Download PDF</a>
+    <!-- Ebook 2 -->
+    <div class="ebook-card">
+        <img src="https://via.placeholder.com/250" alt="Machine Learning Mastery Ebook">
+        <h3>Machine Learning Mastery</h3>
+        <p>Deep dive into machine learning techniques and improve your skills with this comprehensive guide.</p>
+        <a href="buy-now-ml.html"><button class="buy-btn">Buy Now</button></a>
     </div>
 
-    <!-- Module 3 -->
-    <div class="module">
-        <h3>Module 3: Advanced Grammar</h3>
-        <p>In this module, we'll dive into more complex grammatical structures and rules.</p>
-        <video controls>
-            <source src="videos/module3-advanced-grammar.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <br>
-        <a href="pdf/module3-advanced-grammar.pdf" class="download-btn" download>Download PDF</a>
-    </div>
-
-    <!-- Module 4 -->
-    <div class="module">
-        <h3>Module 4: Practice Exercises</h3>
-        <p>Test your knowledge with exercises and quizzes to solidify your understanding.</p>
-        <video controls>
-            <source src="videos/module4-practice.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <br>
-        <a href="pdf/module4-practice.pdf" class="download-btn" download>Download PDF</a>
+    <!-- Ebook 3 -->
+    <div class="ebook-card">
+        <img src="https://via.placeholder.com/250" alt="Mathematics Made Easy Ebook">
+        <h3>Mathematics Made Easy</h3>
+        <p>Simplify complex mathematical concepts and ace your exams with this easy-to-follow ebook.</p>
+        <a href="buy-now-math.html"><button class="buy-btn">Buy Now</button></a>
     </div>
 </div>
 
-<!-- Ebooks Section -->
-<div class="section">
-    <h2>Our Ebooks</h2>
-    <div class="ebooks">
-        <div class="ebook-card">
-            <h3>AI for Beginners</h3>
-            <p>Start your journey in Artificial Intelligence with this ebook.</p>
-            <a href="buy-now-ai.html">Buy Now</a>
-        </div>
-        <div class="ebook-card">
-            <h3>Machine Learning Mastery</h3>
-            <p>A must-read ebook for anyone looking to master Machine Learning.</p>
-            <a href="buy-now-ml.html">Buy Now</a>
-        </div>
-        <div class="ebook-card">
-            <h3>Mathematics Made Easy</h3>
-            <p>Simplify complex mathematical concepts with this easy-to-follow ebook.</p>
-            <a href="buy-now-math.html">Buy Now</a>
-        </div>
-    </div>
+<!-- Purchase Form -->
+<div class="form-container">
+    <h2>Buy Ebook</h2>
+    <form action="submit-purchase.php" method="POST">
+        
+        <!-- Customer Details -->
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        
+        <!-- Select Ebook -->
+        <select name="ebook" required>
+            <option value="">Choose an Ebook</option>
+            <option value="ai-for-beginners">AI for Beginners</option>
+            <option value="ml-mastery">Machine Learning Mastery</option>
+            <option value="math-easy">Mathematics Made Easy</option>
+        </select>
+        
+        <!-- Payment Details -->
+        <input type="text" name="card-number" placeholder="Credit Card Number" required>
+        <input type="month" name="expiry-date" placeholder="Expiration Date" required>
+        <input type="text" name="cvv" placeholder="CVV" required>
+
+        <button type="submit">Complete Purchase</button>
+    </form>
 </div>
 
+<!-- Footer with Social Links -->
 <footer>
     <p>&copy; 2025 AKG Study Group - All rights reserved</p>
+    <div class="social-links">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
 </footer>
 
 </body>
 </html>
+
