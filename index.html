@@ -3,191 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebook Store - AKG Study Group</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #1d3c7c;
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 1.2rem;
-        }
-        .section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #1d3c7c;
-        }
-        .ebook-card {
-            background-color: white;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            max-width: 300px;
-            margin: auto;
-        }
-        .ebook-card img {
-            width: 100%;
-            height: auto;
-            border-radius: 4px;
-            margin-bottom: 20px;
-        }
-        .ebook-card h3 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-        }
-        .ebook-card p {
-            font-size: 1rem;
-            margin-bottom: 20px;
-        }
-        .buy-btn {
-            padding: 12px 30px;
-            background-color: #1d3c7c;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-        .buy-btn:hover {
-            background-color: #1a2f5f;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1d3c7c;
-            color: white;
-        }
-        footer .social-links {
-            margin: 20px 0;
-        }
-        footer .social-links a {
-            color: white;
-            font-size: 1.5rem;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        footer .social-links a:hover {
-            color: #1a2f5f;
-        }
-        .form-container {
-            width: 50%;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        .form-container input, .form-container select, .form-container button {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        .form-container button {
-            background-color: #1d3c7c;
-            color: white;
-            cursor: pointer;
-        }
-        .form-container button:hover {
-            background-color: #1a2f5f;
-        }
-    </style>
+    <title>Under 29Book & Course</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="logo">AKG STUDY GROUP</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>AKG Study Group Ebook Store</h1>
-    <p>Discover our collection of premium ebooks and start learning today!</p>
-</header>
+    <main>
+        <section class="products">
+            <h1>Books & Courses</h1>
+            <div class="product-item">
+                <h3>Mathematics Course</h3>
+                <p>A complete guide to learning Mathematics for beginners.</p>
+                <a href="https://example.com/mathematics-course" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="product-item">
+                <img src="book2.jpg" alt="Book 2">
+                <h3>Grammar Course</h3>
+                <p>Master the art of grammar with our detailed course.</p>
+                <a href="https://example.com/grammar-course" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="product-item">
+                <h3>Mathematics Course</h3>
+                <p>A complete guide to learning Mathematics for beginners.</p>
+                <a href="https://example.com/mathematics-course" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="product-item">
+                <img src="book2.jpg" alt="Book 2">
+                <h3>Grammar Course</h3>
+                <p>Master the art of grammar with our detailed course.</p>
+                <a href="english-course.html" class="buy-btn">free Enroll</a>
+            </div>
+        </section>
 
-<!-- Ebook Collection -->
-<div class="section">
-    <h2>Featured Ebooks</h2>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
 
-    <!-- Ebook 1 -->
-    <div class="ebook-card">
-        <img src="https://via.placeholder.com/250" alt="AI for Beginners Ebook">
-        <h3>AI for Beginners</h3>
-        <p>Start your journey into Artificial Intelligence with this ebook. Perfect for beginners!</p>
-        <a href="buy-now-ai.html"><button class="buy-btn">Buy Now</button></a>
-    </div>
+        <section class="social-links">
+            <h2>Follow Us</h2>
+            <a href="https://facebook.com/yourpage" class="social-icon" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/yourprofile" class="social-icon" target="_blank">
+                <img src="twitter-icon.png" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" class="social-icon" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn">
+            </a>
+        </section>
+    </main>
 
-    <!-- Ebook 2 -->
-    <div class="ebook-card">
-        <img src="https://via.placeholder.com/250" alt="Machine Learning Mastery Ebook">
-        <h3>Machine Learning Mastery</h3>
-        <p>Deep dive into machine learning techniques and improve your skills with this comprehensive guide.</p>
-        <a href="buy-now-ml.html"><button class="buy-btn">Buy Now</button></a>
-    </div>
+    <footer>
+        <p>&copy; 2025 AKG STUDY GROUP. All rights reserved.</p>
+    </footer>
 
-    <!-- Ebook 3 -->
-    <div class="ebook-card">
-        <img src="https://via.placeholder.com/250" alt="Mathematics Made Easy Ebook">
-        <h3>Mathematics Made Easy</h3>
-        <p>Simplify complex mathematical concepts and ace your exams with this easy-to-follow ebook.</p>
-        <a href="buy-now-math.html"><button class="buy-btn">Buy Now</button></a>
-    </div>
-</div>
-
-<!-- Purchase Form -->
-<div class="form-container">
-    <h2>Buy Ebook</h2>
-    <form action="submit-purchase.php" method="POST">
-        
-        <!-- Customer Details -->
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email Address" required>
-        
-        <!-- Select Ebook -->
-        <select name="ebook" required>
-            <option value="">Choose an Ebook</option>
-            <option value="ai-for-beginners">AI for Beginners</option>
-            <option value="ml-mastery">Machine Learning Mastery</option>
-            <option value="math-easy">Mathematics Made Easy</option>
-        </select>
-        
-        <!-- Payment Details -->
-        <input type="text" name="card-number" placeholder="Credit Card Number" required>
-        <input type="month" name="expiry-date" placeholder="Expiration Date" required>
-        <input type="text" name="cvv" placeholder="CVV" required>
-
-        <button type="submit">Complete Purchase</button>
-    </form>
-</div>
-
-<!-- Footer with Social Links -->
-<footer>
-    <p>&copy; 2025 AKG Study Group - All rights reserved</p>
-    <div class="social-links">
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-    </div>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
 
