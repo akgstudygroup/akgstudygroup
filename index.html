@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebook Downloads - AKG Study Group</title>
+    <title>Full Course and Ebook Downloads - AKG Study Group</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,7 +15,7 @@
             background-color: #1d3c7c;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 50px 20px;
         }
         header h1 {
             font-size: 3rem;
@@ -32,40 +32,38 @@
             font-size: 2.5rem;
             margin-bottom: 30px;
         }
-        .ebooks {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .ebook-card {
+        .module, .ebook-card {
             background-color: white;
             padding: 20px;
-            width: 30%;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
             border-radius: 8px;
-            text-align: center;
-            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
-        .ebook-card h3 {
-            font-size: 1.8rem;
+        .module h3, .ebook-card h3 {
+            font-size: 2rem;
             margin-bottom: 15px;
         }
-        .ebook-card p {
+        .module p, .ebook-card p {
             font-size: 1rem;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
-        .ebook-card a {
+        .module video {
+            max-width: 100%;
+            margin: 20px 0;
+        }
+        .module .download-btn, .module .video-btn, .ebook-card a {
             padding: 10px 20px;
             background-color: navy;
             color: white;
-            text-decoration: none;
+            border: none;
             border-radius: 4px;
             cursor: pointer;
             text-transform: uppercase;
             font-weight: bold;
+            margin: 10px 0;
+            text-decoration: none;
         }
-        .ebook-card a:hover {
+        .module .download-btn:hover, .module .video-btn:hover, .ebook-card a:hover {
             background-color: #1d3c7c;
         }
         footer {
@@ -74,14 +72,73 @@
             background-color: #1d3c7c;
             color: white;
         }
+        .ebooks {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>AKG Study Group</h1>
-    <p>Download Our Premium Ebooks or Buy Now!</p>
+    <h1>Full Course & Ebook Downloads - AKG Study Group</h1>
+    <p>Learn and Grow with Our Comprehensive Courses and Premium Ebooks</p>
 </header>
+
+<!-- Course Modules -->
+<div class="section">
+    <h2>Course Modules</h2>
+
+    <!-- Module 1 -->
+    <div class="module">
+        <h3>Module 1: Introduction to the Course</h3>
+        <p>This module introduces you to the course structure and what you will learn in the upcoming lessons.</p>
+        <video controls>
+            <source src="videos/module1-introduction.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <a href="pdf/module1-introduction.pdf" class="download-btn" download>Download PDF</a>
+    </div>
+
+    <!-- Module 2 -->
+    <div class="module">
+        <h3>Module 2: Basics of Grammar</h3>
+        <p>Learn the basic rules of grammar, sentence structure, and more in this module.</p>
+        <video controls>
+            <source src="videos/module2-grammar.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <a href="pdf/module2-grammar.pdf" class="download-btn" download>Download PDF</a>
+    </div>
+
+    <!-- Module 3 -->
+    <div class="module">
+        <h3>Module 3: Advanced Grammar</h3>
+        <p>In this module, we'll dive into more complex grammatical structures and rules.</p>
+        <video controls>
+            <source src="videos/module3-advanced-grammar.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <a href="pdf/module3-advanced-grammar.pdf" class="download-btn" download>Download PDF</a>
+    </div>
+
+    <!-- Module 4 -->
+    <div class="module">
+        <h3>Module 4: Practice Exercises</h3>
+        <p>Test your knowledge with exercises and quizzes to solidify your understanding.</p>
+        <video controls>
+            <source src="videos/module4-practice.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <a href="pdf/module4-practice.pdf" class="download-btn" download>Download PDF</a>
+    </div>
+</div>
 
 <!-- Ebooks Section -->
 <div class="section">
